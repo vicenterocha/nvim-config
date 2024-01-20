@@ -6,8 +6,8 @@ return require('packer').startup(function(use)
 
     -- Telescope
     use {
-        'nvim-telescope/telescope.nvim', tag = '0.1.1',
-        requires = { { 'nvim-lua/plenary.nvim' } }
+        'nvim-telescope/telescope.nvim',
+        --requires = { { 'nvim-lua/plenary.nvim' } }
     }
 
     -- Rose Pine
@@ -139,4 +139,12 @@ return require('packer').startup(function(use)
     -- Vim Markdown
     use('godlygeek/tabular')
     use('preservim/vim-markdown')
+    -- Vim LastPlace
+    use('farmergreg/vim-lastplace')
+
+    -- Copilot
+    use('github/copilot.vim')
+
+    -- Vim Test
+    use('vim-test/vim-test')
 end)
